@@ -1,0 +1,16 @@
+{
+  "name": "fastify-api",
+  "version": "1.0.0",
+  "description": "Api to display linux distros",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "gowtham758550@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^3.19.2",
+    "nodemon": "^2.0.12"
+  }
+}
