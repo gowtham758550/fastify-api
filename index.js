@@ -1,3 +1,6 @@
+var server_port = process.env.YOUR_PORT || process.env.PORT || 3000;
+var server_host = process.env.YOUR_HOST || '0.0.0.0';
+
 const app = require('fastify')({
     logger: true
 })
@@ -11,4 +14,4 @@ distroRoutes.forEach((route) => {
     app.route(route)
 })
 
-app.listen(process.env.PORT || 3000)
+app.listen(server_port, server_host)
